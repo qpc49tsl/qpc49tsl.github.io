@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>كيف تُحسب رسوم بينانس؟ رسوم الفوري والعقود الآجلة و3 طرق لدفع أقل | كود QPC49TSL</title>
+<meta name="description" content="المستخدم العادي في بينانس يدفع 0.1% في التداول الفوري و0.02% صانع / 0.05% آخذ في العقود الآجلة USDⓈ-M. كيف تُحسب الرسوم، وكم تكلف صفقة فتح وإغلاق فعلًا، وإلى أي حد تنخفض مع BNB وكود الإحالة.">
+<link rel="canonical" href="https://qpc49tsl.github.io/ar/trading-fee-calculation.html">
+<link rel="alternate" hreflang="zh-CN" href="https://qpc49tsl.github.io/zh-cn/trading-fee-calculation.html">
+<link rel="alternate" hreflang="zh-TW" href="https://qpc49tsl.github.io/zh-tw/trading-fee-calculation.html">
+<link rel="alternate" hreflang="en" href="https://qpc49tsl.github.io/en/trading-fee-calculation.html">
+<link rel="alternate" hreflang="es" href="https://qpc49tsl.github.io/es/trading-fee-calculation.html">
+<link rel="alternate" hreflang="pt-BR" href="https://qpc49tsl.github.io/pt-br/trading-fee-calculation.html">
+<link rel="alternate" hreflang="ru" href="https://qpc49tsl.github.io/ru/trading-fee-calculation.html">
+<link rel="alternate" hreflang="vi" href="https://qpc49tsl.github.io/vi/trading-fee-calculation.html">
+<link rel="alternate" hreflang="id" href="https://qpc49tsl.github.io/id/trading-fee-calculation.html">
+<link rel="alternate" hreflang="ar" href="https://qpc49tsl.github.io/ar/trading-fee-calculation.html">
+<link rel="alternate" hreflang="fr" href="https://qpc49tsl.github.io/fr/trading-fee-calculation.html">
+<link rel="alternate" hreflang="x-default" href="https://qpc49tsl.github.io/en/trading-fee-calculation.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="كيف تُحسب رسوم بينانس؟ رسوم الفوري والعقود الآجلة و3 طرق لدفع أقل | كود QPC49TSL">
+<meta property="og:description" content="المستخدم العادي في بينانس يدفع 0.1% في التداول الفوري و0.02% صانع / 0.05% آخذ في العقود الآجلة USDⓈ-M. كيف تُحسب الرسوم، وكم تكلف صفقة فتح وإغلاق فعلًا، وإلى أي حد تنخفض مع BNB وكود الإحالة.">
+<meta property="og:url" content="https://qpc49tsl.github.io/ar/trading-fee-calculation.html">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "كيف تُحسب رسوم بينانس؟ رسوم الفوري والعقود الآجلة و3 طرق لدفع أقل | كود QPC49TSL", "description": "المستخدم العادي في بينانس يدفع 0.1% في التداول الفوري و0.02% صانع / 0.05% آخذ في العقود الآجلة USDⓈ-M. كيف تُحسب الرسوم، وكم تكلف صفقة فتح وإغلاق فعلًا، وإلى أي حد تنخفض مع BNB وكود الإحالة.", "inLanguage": "ar", "datePublished": "2026-10-23", "dateModified": "2026-10-23", "mainEntityOfPage": "https://qpc49tsl.github.io/ar/trading-fee-calculation.html"}</script>
+<style>
+:root{--bg:#fafaf7;--fg:#1d1d1f;--muted:#5f6368;--line:#e4e4de;--card:#fff;--accent:#0b7a5c;--accent-fg:#fff;--code-bg:#eef4f0}
+@media (prefers-color-scheme:dark){:root{--bg:#121413;--fg:#ececea;--muted:#a3a7a5;--line:#2a2e2c;--card:#1a1d1c;--accent:#3fbf94;--accent-fg:#06110d;--code-bg:#202624}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.75 system-ui,-apple-system,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans",sans-serif;padding-bottom:76px}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:52px;font-size:.95rem}
+header a{color:var(--fg);text-decoration:none;font-weight:600}
+a{color:var(--accent);overflow-wrap:anywhere}
+h1{font-size:1.6rem;line-height:1.35;margin:28px 0 6px}
+.meta{color:var(--muted);font-size:.85rem;margin:0 0 8px}
+h2{font-size:1.25rem;line-height:1.4;margin:36px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;line-height:1.5;margin:26px 0 6px}
+p,ul,ol{margin:0 0 14px}
+li{margin:4px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:20px 0 8px}
+.card-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;font-size:.9rem;color:var(--muted)}
+.card-top .rebate{color:var(--accent);font-weight:600}
+.code-row{display:flex;gap:10px;align-items:stretch;margin:10px 0 0}
+.code{flex:1;font:700 1.9rem/1 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.06em;background:var(--code-bg);padding:14px;border-radius:10px;text-align:center;user-select:all}
+button.copy{font:inherit;font-size:.95rem;font-weight:600;border:1px solid var(--accent);color:var(--accent);background:transparent;border-radius:10px;padding:0 16px;cursor:pointer;white-space:nowrap}
+.cta{display:block;text-align:center;background:var(--accent);color:var(--accent-fg);text-decoration:none;font-weight:700;padding:13px 16px;border-radius:10px;margin-top:12px}
+.disclosure{font-size:.82rem;color:var(--muted);margin:10px 0 0;line-height:1.55}
+.next{display:block;margin:32px 0 0;padding:14px 16px;border:1px solid var(--line);border-radius:10px;text-decoration:none;font-weight:600}
+.bar{position:fixed;inset-inline:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:10px 16px}
+.bar .wrap{display:flex;gap:8px;align-items:center;padding:0}
+.bar .label{flex:1;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar b{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.04em}
+.bar button.copy{padding:8px 12px}
+.bar .cta{margin:0;padding:8px 14px;white-space:nowrap}
+footer{color:var(--muted);font-size:.88rem;border-top:1px solid var(--line);margin-top:44px;padding:20px 0}
+.langs{display:flex;flex-wrap:wrap;gap:6px 16px;list-style:none;padding:0;margin:8px 0 16px}
+.hub{list-style:none;padding:0}
+.hub li{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0;background:var(--card)}
+.hub .lang{font-weight:700;display:block}
+.related ul{padding-inline-start:20px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="/ar/">QPC49TSL</a><a href="/" aria-label="Languages">🌐 العربية</a></div></header>
+<main class="wrap">
+<article>
+<h1>كيف تُحسب رسوم بينانس؟ رسوم الفوري والعقود الآجلة و3 طرق لدفع أقل | كود QPC49TSL</h1>
+<p class="meta">آخر تحديث 2026-10-23</p>
+<section class="card" aria-label="كود الإحالة">
+<div class="card-top"><span>كود الإحالة</span><span class="rebate">استرداد 20% من رسوم الفوري والعقود الآجلة</span></div>
+<div class="code-row"><code class="code">QPC49TSL</code><button class="copy" type="button" data-copy="QPC49TSL" data-done="تم النسخ">نسخ</button></div>
+<a class="cta" href="https://www.binance.com/ar/join?ref=QPC49TSL" rel="sponsored noopener" target="_blank">سجّل في بينانس بهذا الكود</a>
+<p class="disclosure">هذا كود الإحالة الخاص بي. إذا سجلت به، تدفع لي بينانس عمولة، ولا ينقص ذلك من استردادك.</p>
+</section>
+<p>الرسوم تكلفة لا ينتبه لها أحد لكن الجميع يدفعها. لنفهم أولًا كيف تُحسب، ثم كيف نخفضها.</p>
+<p>الرسوم التالية هي الرسوم القياسية للمستخدم العادي حسب صفحة الرسوم في بينانس. راجع دائمًا الصفحة الرسمية للأرقام الحالية.</p>
+<h3>رسوم التداول الفوري</h3>
+<p>المستخدم العادي: صانع 0.1%، آخذ 0.1%.<br>عند دفع الرسوم بـBNB تحصل على خصم 25%: 0.075%.</p>
+<p>المعادلة: الرسوم = قيمة الصفقة × النسبة.</p>
+<p>مثال: اشتريت عملات بقيمة 1,000 USDT، تدفع 1,000 × 0.1% = 1 USDT. وعند البيع تدفع مرة أخرى.</p>
+<h3>رسوم العقود الآجلة USDⓈ-M</h3>
+<p>المستخدم العادي (هامش USDT): صانع 0.02%، آخذ 0.05%.<br>عند الدفع بـBNB خصم 10%: صانع 0.018%، آخذ 0.045%.</p>
+<p>أمران مهمان في العقود الآجلة:</p>
+<ul><li>الرسوم تُحسب على حجم المركز، لا على الهامش. 1,000 USDT برافعة 20x تعني مركزًا بقيمة 20,000 USDT.</li><li>تدفع عند الفتح، ثم تدفع مرة أخرى عند الإغلاق.</li></ul>
+<p>مثال: 1,000 USDT، رافعة 20x، أمر سوق للفتح وللإغلاق:<br>الفتح: 20,000 × 0.05% = 10 USDT<br>الإغلاق: 20,000 × 0.05% = 10 USDT<br>أي 20 USDT لكل صفقة فتح وإغلاق، وهذا 2% من هامشك. لمن يتداول العقود الآجلة بكثرة، الرسوم هي أكبر مصروف.</p>
+<h3>الصانع والآخذ</h3>
+<p>الصانع: تضع أمرًا عند سعر معين وتنتظر أن ينفذه غيرك، مثل أمر محدد لا يُنفَّذ فورًا.<br>الآخذ: تنفذ فورًا بسعر السوق، مثل أمر السوق.</p>
+<p>رسوم الصانع أقل، فلا تلاحق السعر بأوامر السوق إن لم تكن مضطرًا.</p>
+<h3>3 طرق لدفع أقل</h3>
+<ol><li>استخدم كود إحالة. 20% من كل رسوم ترجع لك، في الفوري والعقود الآجلة. تفعلها مرة واحدة عند التسجيل.</li><li>ادفع الرسوم بـBNB. خصم 25% في الفوري و10% في العقود الآجلة. فعّلها من إعدادات الحساب واترك قليلًا من BNB.</li><li>صانع أكثر، آخذ أقل. في العقود الآجلة رسوم الصانع خُمسان فقط من رسوم الآخذ.</li></ol>
+<p>مع الجمع بينها في الفوري: 0.1% × 0.75 (BNB) = 0.075%، ومع استرداد 20% تصبح كأنها 0.06%.</p>
+<p>انتبه أيضًا للعروض، مثل رسوم صانع صفرية على بعض أزواج العقود الآجلة. لكن الصفقات بدون رسوم لا تمنح استردادًا ولا تُحتسب في حجم إعادة الربط.</p>
+<h3>مستويات VIP</h3>
+<p>مع حجم تداول 30 يومًا ورصيد BNB كافيين ترتقي إلى VIP وتدفع أقل. مثلًا VIP 1 في الفوري يتطلب أكثر من مليون دولار حجم تداول خلال 30 يومًا و5 BNB. لمعظم الناس، النصائح الثلاث أعلاه أهم.</p>
+<p>رابط التسجيل (كود الإحالة مضاف تلقائيًا):<br><a href="https://www.binance.com/ar/join?ref=QPC49TSL" rel="sponsored noopener" target="_blank">https://www.binance.com/ar/join?ref=QPC49TSL</a></p>
+<p>كود الإحالة: QPC49TSL</p>
+</article>
+<a class="next" href="/ar/guide.html">تريد كل القواعد؟ اقرأ الدليل الكامل ←</a><section class="related"><h2>قد يهمك أيضًا</h2><ul><li><a href="/ar/forgot-referral-code.html">نسيت إدخال كود الإحالة في بينانس؟ كيف تربطه بعد التسجيل | كود QPC49TSL</a></li><li><a href="/ar/is-rebate-permanent.html">هل استرداد الإحالة في بينانس دائم؟ كم يستمر في التداول الفوري والعقود الآجلة | كود QPC49TSL</a></li><li><a href="/ar/rebate-percentage.html">كم نسبة استرداد كود إحالة بينانس؟ ماذا تعني 40% و50% فعلًا | كود QPC49TSL</a></li><li><a href="/ar/what-is-referral-code-for.html">ما فائدة كود إحالة بينانس؟ كم توفر في سنة | كود QPC49TSL</a></li><li><a href="/ar/where-to-check-rebate.html">أين أرى استرداد الإحالة في بينانس؟ طريقة مراجعة سجل الاسترداد | كود QPC49TSL</a></li></ul></section>
+</main>
+<footer><div class="wrap">
+<div>لغات أخرى</div>
+<ul class="langs"><li><a href="/zh-cn/" hreflang="zh-CN" lang="zh-CN">简体中文</a></li><li><a href="/zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a></li><li><a href="/en/" hreflang="en" lang="en">English</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/vi/" hreflang="vi" lang="vi">Tiếng Việt</a></li><li><a href="/id/" hreflang="id" lang="id">Bahasa Indonesia</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li></ul>
+<p>هذا موقع شخصي وليس موقعًا رسميًا لبينانس. أسعار العملات الرقمية متقلبة والتداول ينطوي على مخاطر. تأكد أن استخدام بينانس قانوني في بلدك.</p>
+</div></footer>
+<div class="bar"><div class="wrap">
+<span class="label">كود الإحالة: <b>QPC49TSL</b></span>
+<button class="copy" type="button" data-copy="QPC49TSL" data-done="تم النسخ">نسخ</button>
+<a class="cta" href="https://www.binance.com/ar/join?ref=QPC49TSL" rel="sponsored noopener" target="_blank">سجّل</a>
+</div></div>
+<script>document.querySelectorAll('button.copy').forEach(function(b){b.addEventListener('click',function(){var t=b.getAttribute('data-copy'),o=b.textContent;function done(){b.textContent=b.getAttribute('data-done');setTimeout(function(){b.textContent=o},1500)}if(navigator.clipboard){navigator.clipboard.writeText(t).then(done,fallback)}else{fallback()}function fallback(){var i=document.createElement('textarea');i.value=t;document.body.appendChild(i);i.select();try{document.execCommand('copy')}catch(e){}i.remove();done()}})});</script>
+</body>
+</html>
