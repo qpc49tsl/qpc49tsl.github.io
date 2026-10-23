@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Frais Binance : comment ils sont calculés en Spot et en Futures, et 3 façons de payer moins | Code QPC49TSL</title>
+<meta name="description" content="Un utilisateur normal de Binance paie 0,1 % en Spot et 0,02 % maker / 0,05 % taker en Futures USDⓈ-M. Comment les frais sont calculés, ce que coûte vraiment un aller-retour en Futures, et jusqu&#x27;où les faire baisser avec le BNB et un code de parrainage.">
+<link rel="canonical" href="https://qpc49tsl.github.io/fr/trading-fee-calculation.html">
+<link rel="alternate" hreflang="zh-CN" href="https://qpc49tsl.github.io/zh-cn/trading-fee-calculation.html">
+<link rel="alternate" hreflang="zh-TW" href="https://qpc49tsl.github.io/zh-tw/trading-fee-calculation.html">
+<link rel="alternate" hreflang="en" href="https://qpc49tsl.github.io/en/trading-fee-calculation.html">
+<link rel="alternate" hreflang="es" href="https://qpc49tsl.github.io/es/trading-fee-calculation.html">
+<link rel="alternate" hreflang="pt-BR" href="https://qpc49tsl.github.io/pt-br/trading-fee-calculation.html">
+<link rel="alternate" hreflang="ru" href="https://qpc49tsl.github.io/ru/trading-fee-calculation.html">
+<link rel="alternate" hreflang="vi" href="https://qpc49tsl.github.io/vi/trading-fee-calculation.html">
+<link rel="alternate" hreflang="id" href="https://qpc49tsl.github.io/id/trading-fee-calculation.html">
+<link rel="alternate" hreflang="ar" href="https://qpc49tsl.github.io/ar/trading-fee-calculation.html">
+<link rel="alternate" hreflang="fr" href="https://qpc49tsl.github.io/fr/trading-fee-calculation.html">
+<link rel="alternate" hreflang="x-default" href="https://qpc49tsl.github.io/en/trading-fee-calculation.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Frais Binance : comment ils sont calculés en Spot et en Futures, et 3 façons de payer moins | Code QPC49TSL">
+<meta property="og:description" content="Un utilisateur normal de Binance paie 0,1 % en Spot et 0,02 % maker / 0,05 % taker en Futures USDⓈ-M. Comment les frais sont calculés, ce que coûte vraiment un aller-retour en Futures, et jusqu&#x27;où les faire baisser avec le BNB et un code de parrainage.">
+<meta property="og:url" content="https://qpc49tsl.github.io/fr/trading-fee-calculation.html">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Frais Binance : comment ils sont calculés en Spot et en Futures, et 3 façons de payer moins | Code QPC49TSL", "description": "Un utilisateur normal de Binance paie 0,1 % en Spot et 0,02 % maker / 0,05 % taker en Futures USDⓈ-M. Comment les frais sont calculés, ce que coûte vraiment un aller-retour en Futures, et jusqu'où les faire baisser avec le BNB et un code de parrainage.", "inLanguage": "fr", "datePublished": "2026-10-23", "dateModified": "2026-10-23", "mainEntityOfPage": "https://qpc49tsl.github.io/fr/trading-fee-calculation.html"}</script>
+<style>
+:root{--bg:#fafaf7;--fg:#1d1d1f;--muted:#5f6368;--line:#e4e4de;--card:#fff;--accent:#0b7a5c;--accent-fg:#fff;--code-bg:#eef4f0}
+@media (prefers-color-scheme:dark){:root{--bg:#121413;--fg:#ececea;--muted:#a3a7a5;--line:#2a2e2c;--card:#1a1d1c;--accent:#3fbf94;--accent-fg:#06110d;--code-bg:#202624}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.75 system-ui,-apple-system,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans",sans-serif;padding-bottom:76px}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:52px;font-size:.95rem}
+header a{color:var(--fg);text-decoration:none;font-weight:600}
+a{color:var(--accent);overflow-wrap:anywhere}
+h1{font-size:1.6rem;line-height:1.35;margin:28px 0 6px}
+.meta{color:var(--muted);font-size:.85rem;margin:0 0 8px}
+h2{font-size:1.25rem;line-height:1.4;margin:36px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;line-height:1.5;margin:26px 0 6px}
+p,ul,ol{margin:0 0 14px}
+li{margin:4px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:20px 0 8px}
+.card-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;font-size:.9rem;color:var(--muted)}
+.card-top .rebate{color:var(--accent);font-weight:600}
+.code-row{display:flex;gap:10px;align-items:stretch;margin:10px 0 0}
+.code{flex:1;font:700 1.9rem/1 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.06em;background:var(--code-bg);padding:14px;border-radius:10px;text-align:center;user-select:all}
+button.copy{font:inherit;font-size:.95rem;font-weight:600;border:1px solid var(--accent);color:var(--accent);background:transparent;border-radius:10px;padding:0 16px;cursor:pointer;white-space:nowrap}
+.cta{display:block;text-align:center;background:var(--accent);color:var(--accent-fg);text-decoration:none;font-weight:700;padding:13px 16px;border-radius:10px;margin-top:12px}
+.disclosure{font-size:.82rem;color:var(--muted);margin:10px 0 0;line-height:1.55}
+.next{display:block;margin:32px 0 0;padding:14px 16px;border:1px solid var(--line);border-radius:10px;text-decoration:none;font-weight:600}
+.bar{position:fixed;inset-inline:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:10px 16px}
+.bar .wrap{display:flex;gap:8px;align-items:center;padding:0}
+.bar .label{flex:1;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar b{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.04em}
+.bar button.copy{padding:8px 12px}
+.bar .cta{margin:0;padding:8px 14px;white-space:nowrap}
+footer{color:var(--muted);font-size:.88rem;border-top:1px solid var(--line);margin-top:44px;padding:20px 0}
+.langs{display:flex;flex-wrap:wrap;gap:6px 16px;list-style:none;padding:0;margin:8px 0 16px}
+.hub{list-style:none;padding:0}
+.hub li{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0;background:var(--card)}
+.hub .lang{font-weight:700;display:block}
+.related ul{padding-inline-start:20px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="/fr/">QPC49TSL</a><a href="/" aria-label="Languages">🌐 Français</a></div></header>
+<main class="wrap">
+<article>
+<h1>Frais Binance : comment ils sont calculés en Spot et en Futures, et 3 façons de payer moins | Code QPC49TSL</h1>
+<p class="meta">Mis à jour le 2026-10-23</p>
+<section class="card" aria-label="Code de parrainage">
+<div class="card-top"><span>Code de parrainage</span><span class="rebate">20 % de remboursement sur les frais Spot et Futures</span></div>
+<div class="code-row"><code class="code">QPC49TSL</code><button class="copy" type="button" data-copy="QPC49TSL" data-done="Copié">Copier</button></div>
+<a class="cta" href="https://www.binance.com/fr/join?ref=QPC49TSL" rel="sponsored noopener" target="_blank">S&#x27;inscrire sur Binance avec ce code</a>
+<p class="disclosure">C&#x27;est mon propre code de parrainage. Si vous vous inscrivez avec, Binance me verse une commission. Ça ne réduit pas votre remboursement.</p>
+</section>
+<p>Les frais, c'est le coût que personne ne regarde mais que tout le monde paie. D'abord le calcul, ensuite comment les réduire.</p>
+<p>Les taux ci-dessous sont les taux standards pour un utilisateur normal sur la page des frais de Binance. Vérifiez toujours la page officielle pour les chiffres actuels.</p>
+<h3>Frais Spot</h3>
+<p>Utilisateur normal : 0,1 % maker, 0,1 % taker.<br>En payant les frais en BNB, 25 % de réduction : 0,075 %.</p>
+<p>Formule : frais = montant du trade × taux.</p>
+<p>Exemple : vous achetez pour 1 000 USDT de crypto, vous payez 1 000 × 0,1 % = 1 USDT. À la vente, vous payez à nouveau.</p>
+<h3>Frais Futures USDⓈ-M</h3>
+<p>Utilisateur normal (marge en USDT) : 0,02 % maker, 0,05 % taker.<br>En payant en BNB, 10 % de réduction : 0,018 % maker, 0,045 % taker.</p>
+<p>Deux choses à savoir en Futures :</p>
+<ul><li>Les frais sont calculés sur la taille de la position, pas sur la marge. 1 000 USDT en levier 20x, c'est une position de 20 000 USDT.</li><li>Vous payez à l'ouverture, puis encore à la clôture.</li></ul>
+<p>Exemple : 1 000 USDT, levier 20x, ordre au marché pour ouvrir et pour fermer :<br>Ouverture : 20 000 × 0,05 % = 10 USDT<br>Clôture : 20 000 × 0,05 % = 10 USDT<br>20 USDT par aller-retour, soit 2 % de votre marge. Pour ceux qui tradent souvent les Futures, les frais sont la plus grosse dépense.</p>
+<h3>Maker et taker</h3>
+<p>Maker : vous placez un ordre à un prix et attendez qu'il soit exécuté, comme un ordre limite qui ne passe pas tout de suite.<br>Taker : vous êtes exécuté immédiatement au prix du marché, comme un ordre au marché.</p>
+<p>Les frais maker sont plus bas, donc ne courez pas après le prix avec des ordres au marché sans raison.</p>
+<h3>3 façons de payer moins</h3>
+<ol><li>Utilisez un code de parrainage. 20 % de chaque frais remboursés, en Spot et en Futures. Une seule fois, à l'inscription.</li><li>Payez vos frais en BNB. −25 % en Spot, −10 % en Futures. Activez l'option dans les paramètres du compte et gardez un peu de BNB.</li><li>Plus de maker, moins de taker. En Futures, les frais maker valent deux cinquièmes des frais taker.</li></ol>
+<p>Tout cumulé en Spot : 0,1 % × 0,75 (BNB) = 0,075 %, et avec 20 % remboursés, on tombe à 0,06 %.</p>
+<p>Surveillez aussi les promotions, comme les frais maker à zéro sur certaines paires Futures. Mais attention : les trades sans frais ne donnent pas de remboursement et ne comptent pas pour le volume de nouvelle liaison.</p>
+<h3>Niveaux VIP</h3>
+<p>Avec assez de volume sur 30 jours et de BNB, vous passez VIP et payez moins. Par exemple, le VIP 1 Spot demande plus d'un million de dollars de volume sur 30 jours et 5 BNB. Pour la plupart des gens, les trois conseils ci-dessus comptent davantage.</p>
+<p>Lien d'inscription (code de parrainage déjà rempli) :<br><a href="https://www.binance.com/fr/join?ref=QPC49TSL" rel="sponsored noopener" target="_blank">https://www.binance.com/fr/join?ref=QPC49TSL</a></p>
+<p>Code de parrainage : QPC49TSL</p>
+</article>
+<a class="next" href="/fr/guide.html">Vous voulez toutes les règles ? Lisez le guide complet →</a><section class="related"><h2>Vous pourriez aussi vous demander</h2><ul><li><a href="/fr/forgot-referral-code.html">Code parrainage Binance oublié à l&#x27;inscription ? Comment le lier après coup | Code QPC49TSL</a></li><li><a href="/fr/is-rebate-permanent.html">Le remboursement de parrainage Binance est-il à vie ? Durée en Spot et en Futures | Code QPC49TSL</a></li><li><a href="/fr/rebate-percentage.html">Quel pourcentage rembourse un code parrainage Binance ? Les 40 % et 50 % expliqués | Code QPC49TSL</a></li><li><a href="/fr/what-is-referral-code-for.html">À quoi sert un code parrainage Binance ? Combien vous économisez en un an | Code QPC49TSL</a></li><li><a href="/fr/where-to-check-rebate.html">Où voir le remboursement de parrainage Binance ? Historique des remboursements | Code QPC49TSL</a></li></ul></section>
+</main>
+<footer><div class="wrap">
+<div>Autres langues</div>
+<ul class="langs"><li><a href="/zh-cn/" hreflang="zh-CN" lang="zh-CN">简体中文</a></li><li><a href="/zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a></li><li><a href="/en/" hreflang="en" lang="en">English</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/vi/" hreflang="vi" lang="vi">Tiếng Việt</a></li><li><a href="/id/" hreflang="id" lang="id">Bahasa Indonesia</a></li><li><a href="/ar/" hreflang="ar" lang="ar">العربية</a></li></ul>
+<p>Ceci est un site personnel, pas un site officiel de Binance. Les cryptomonnaies sont volatiles et le trading comporte des risques. Vérifiez que Binance est légalement accessible dans votre pays.</p>
+</div></footer>
+<div class="bar"><div class="wrap">
+<span class="label">Code de parrainage: <b>QPC49TSL</b></span>
+<button class="copy" type="button" data-copy="QPC49TSL" data-done="Copié">Copier</button>
+<a class="cta" href="https://www.binance.com/fr/join?ref=QPC49TSL" rel="sponsored noopener" target="_blank">S&#x27;inscrire</a>
+</div></div>
+<script>document.querySelectorAll('button.copy').forEach(function(b){b.addEventListener('click',function(){var t=b.getAttribute('data-copy'),o=b.textContent;function done(){b.textContent=b.getAttribute('data-done');setTimeout(function(){b.textContent=o},1500)}if(navigator.clipboard){navigator.clipboard.writeText(t).then(done,fallback)}else{fallback()}function fallback(){var i=document.createElement('textarea');i.value=t;document.body.appendChild(i);i.select();try{document.execCommand('copy')}catch(e){}i.remove();done()}})});</script>
+</body>
+</html>
