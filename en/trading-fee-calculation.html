@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How Binance Trading Fees Work: Spot &amp; Futures Rates + 3 Ways to Pay Less | Code QPC49TSL</title>
+<meta name="description" content="Regular Binance users pay 0.1% on spot and 0.02% maker / 0.05% taker on USDⓈ-M futures. How fees are calculated, what a futures round trip really costs, and how low BNB discounts plus a referral rebate can take you.">
+<link rel="canonical" href="https://qpc49tsl.github.io/en/trading-fee-calculation.html">
+<link rel="alternate" hreflang="zh-CN" href="https://qpc49tsl.github.io/zh-cn/trading-fee-calculation.html">
+<link rel="alternate" hreflang="zh-TW" href="https://qpc49tsl.github.io/zh-tw/trading-fee-calculation.html">
+<link rel="alternate" hreflang="en" href="https://qpc49tsl.github.io/en/trading-fee-calculation.html">
+<link rel="alternate" hreflang="es" href="https://qpc49tsl.github.io/es/trading-fee-calculation.html">
+<link rel="alternate" hreflang="pt-BR" href="https://qpc49tsl.github.io/pt-br/trading-fee-calculation.html">
+<link rel="alternate" hreflang="ru" href="https://qpc49tsl.github.io/ru/trading-fee-calculation.html">
+<link rel="alternate" hreflang="vi" href="https://qpc49tsl.github.io/vi/trading-fee-calculation.html">
+<link rel="alternate" hreflang="id" href="https://qpc49tsl.github.io/id/trading-fee-calculation.html">
+<link rel="alternate" hreflang="ar" href="https://qpc49tsl.github.io/ar/trading-fee-calculation.html">
+<link rel="alternate" hreflang="fr" href="https://qpc49tsl.github.io/fr/trading-fee-calculation.html">
+<link rel="alternate" hreflang="x-default" href="https://qpc49tsl.github.io/en/trading-fee-calculation.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How Binance Trading Fees Work: Spot &amp; Futures Rates + 3 Ways to Pay Less | Code QPC49TSL">
+<meta property="og:description" content="Regular Binance users pay 0.1% on spot and 0.02% maker / 0.05% taker on USDⓈ-M futures. How fees are calculated, what a futures round trip really costs, and how low BNB discounts plus a referral rebate can take you.">
+<meta property="og:url" content="https://qpc49tsl.github.io/en/trading-fee-calculation.html">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Binance Trading Fees Work: Spot & Futures Rates + 3 Ways to Pay Less | Code QPC49TSL", "description": "Regular Binance users pay 0.1% on spot and 0.02% maker / 0.05% taker on USDⓈ-M futures. How fees are calculated, what a futures round trip really costs, and how low BNB discounts plus a referral rebate can take you.", "inLanguage": "en", "datePublished": "2026-10-23", "dateModified": "2026-10-23", "mainEntityOfPage": "https://qpc49tsl.github.io/en/trading-fee-calculation.html"}</script>
+<style>
+:root{--bg:#fafaf7;--fg:#1d1d1f;--muted:#5f6368;--line:#e4e4de;--card:#fff;--accent:#0b7a5c;--accent-fg:#fff;--code-bg:#eef4f0}
+@media (prefers-color-scheme:dark){:root{--bg:#121413;--fg:#ececea;--muted:#a3a7a5;--line:#2a2e2c;--card:#1a1d1c;--accent:#3fbf94;--accent-fg:#06110d;--code-bg:#202624}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.75 system-ui,-apple-system,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans",sans-serif;padding-bottom:76px}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:52px;font-size:.95rem}
+header a{color:var(--fg);text-decoration:none;font-weight:600}
+a{color:var(--accent);overflow-wrap:anywhere}
+h1{font-size:1.6rem;line-height:1.35;margin:28px 0 6px}
+.meta{color:var(--muted);font-size:.85rem;margin:0 0 8px}
+h2{font-size:1.25rem;line-height:1.4;margin:36px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;line-height:1.5;margin:26px 0 6px}
+p,ul,ol{margin:0 0 14px}
+li{margin:4px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:20px 0 8px}
+.card-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;font-size:.9rem;color:var(--muted)}
+.card-top .rebate{color:var(--accent);font-weight:600}
+.code-row{display:flex;gap:10px;align-items:stretch;margin:10px 0 0}
+.code{flex:1;font:700 1.9rem/1 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.06em;background:var(--code-bg);padding:14px;border-radius:10px;text-align:center;user-select:all}
+button.copy{font:inherit;font-size:.95rem;font-weight:600;border:1px solid var(--accent);color:var(--accent);background:transparent;border-radius:10px;padding:0 16px;cursor:pointer;white-space:nowrap}
+.cta{display:block;text-align:center;background:var(--accent);color:var(--accent-fg);text-decoration:none;font-weight:700;padding:13px 16px;border-radius:10px;margin-top:12px}
+.disclosure{font-size:.82rem;color:var(--muted);margin:10px 0 0;line-height:1.55}
+.next{display:block;margin:32px 0 0;padding:14px 16px;border:1px solid var(--line);border-radius:10px;text-decoration:none;font-weight:600}
+.bar{position:fixed;inset-inline:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:10px 16px}
+.bar .wrap{display:flex;gap:8px;align-items:center;padding:0}
+.bar .label{flex:1;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar b{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.04em}
+.bar button.copy{padding:8px 12px}
+.bar .cta{margin:0;padding:8px 14px;white-space:nowrap}
+footer{color:var(--muted);font-size:.88rem;border-top:1px solid var(--line);margin-top:44px;padding:20px 0}
+.langs{display:flex;flex-wrap:wrap;gap:6px 16px;list-style:none;padding:0;margin:8px 0 16px}
+.hub{list-style:none;padding:0}
+.hub li{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0;background:var(--card)}
+.hub .lang{font-weight:700;display:block}
+.related ul{padding-inline-start:20px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="/en/">QPC49TSL</a><a href="/" aria-label="Languages">🌐 English</a></div></header>
+<main class="wrap">
+<article>
+<h1>How Binance Trading Fees Work: Spot &amp; Futures Rates + 3 Ways to Pay Less | Code QPC49TSL</h1>
+<p class="meta">Updated 2026-10-23</p>
+<section class="card" aria-label="Referral code">
+<div class="card-top"><span>Referral code</span><span class="rebate">20% back on spot &amp; futures fees</span></div>
+<div class="code-row"><code class="code">QPC49TSL</code><button class="copy" type="button" data-copy="QPC49TSL" data-done="Copied">Copy</button></div>
+<a class="cta" href="https://www.binance.com/en/join?ref=QPC49TSL" rel="sponsored noopener" target="_blank">Sign up on Binance with this code</a>
+<p class="disclosure">This is my own referral code. If you sign up with it, Binance pays me a commission. It doesn&#x27;t reduce your rebate.</p>
+</section>
+<p>Fees are the cost of trading that nobody notices but everybody pays. Let's work out how they're calculated, then how to cut them.</p>
+<p>The rates below are Binance's standard rates for regular users as shown on its fee page. Always check the official page for current numbers.</p>
+<h3>Spot fees</h3>
+<p>Regular user: 0.1% maker, 0.1% taker.<br>Pay fees with BNB for 25% off: 0.075%.</p>
+<p>Formula: fee = trade amount × rate.</p>
+<p>Example: buy $1,000 of crypto, pay 1,000 × 0.1% = $1. You pay again when you sell.</p>
+<h3>USDⓈ-M futures fees</h3>
+<p>Regular user (USDT-margined): 0.02% maker, 0.05% taker.<br>Pay with BNB for 10% off: 0.018% maker, 0.045% taker.</p>
+<p>Two things to know about futures:</p>
+<ul><li>Fees are based on position size, not margin. $1,000 at 20x is a $20,000 position.</li><li>You pay when you open and again when you close.</li></ul>
+<p>Example: $1,000, 20x, market order to open and market order to close:<br>Open: 20,000 × 0.05% = $10<br>Close: 20,000 × 0.05% = $10<br>That's $20 for one round trip, or 2% of your $1,000 margin. For active futures traders, fees are the biggest cost.</p>
+<h3>Maker vs. taker</h3>
+<p>Maker: you place an order at a price and wait for someone to fill it, like a limit order that doesn't fill immediately.<br>Taker: you fill immediately at market price, like a market order.</p>
+<p>Maker fees are lower, so don't chase with market orders when you don't have to.</p>
+<h3>3 ways to pay less</h3>
+<ol><li>Use a referral code. 20% of every fee back, on spot and futures. One-time setup at sign-up.</li><li>Pay fees with BNB. 25% off spot, 10% off futures. Turn it on in your account settings and keep a little BNB in your account.</li><li>Make more, take less. Futures maker fees are two-fifths of taker fees.</li></ol>
+<p>Stack them on spot: 0.1% × 0.75 (BNB) = 0.075%, then 20% back, which works out to 0.06%.</p>
+<p>Also keep an eye on promotions, like zero maker fees on some futures pairs. Note that zero-fee trades earn no rebate and don't count toward rebind volume.</p>
+<h3>VIP tiers</h3>
+<p>Enough 30-day volume and BNB holdings get you VIP rates. For example, spot VIP 1 needs over $1 million in 30-day volume plus 5 BNB. For most people, the three tips above matter more.</p>
+<p>Sign-up link (referral code filled in):<br><a href="https://www.binance.com/en/join?ref=QPC49TSL" rel="sponsored noopener" target="_blank">https://www.binance.com/en/join?ref=QPC49TSL</a></p>
+<p>Referral code: QPC49TSL</p>
+</article>
+<a class="next" href="/en/guide.html">Want the full rules? Read the complete guide →</a><section class="related"><h2>You might also ask</h2><ul><li><a href="/en/forgot-referral-code.html">Forgot to Enter a Binance Referral Code? How to Add It After Sign-Up | Code QPC49TSL</a></li><li><a href="/en/is-rebate-permanent.html">Is the Binance Referral Rebate Permanent? How Long Spot and Futures Kickbacks Last | Code QPC49TSL</a></li><li><a href="/en/rebate-percentage.html">Binance Referral Rebate Percentage: What &quot;40%&quot; and &quot;50%&quot; Really Mean | Code QPC49TSL</a></li><li><a href="/en/what-is-referral-code-for.html">What Does a Binance Referral Code Do? How Much You Save in a Year | Code QPC49TSL</a></li><li><a href="/en/where-to-check-rebate.html">Where to Check Your Binance Referral Rebate (Kickback History) | Code QPC49TSL</a></li></ul></section>
+</main>
+<footer><div class="wrap">
+<div>Other languages</div>
+<ul class="langs"><li><a href="/zh-cn/" hreflang="zh-CN" lang="zh-CN">简体中文</a></li><li><a href="/zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/vi/" hreflang="vi" lang="vi">Tiếng Việt</a></li><li><a href="/id/" hreflang="id" lang="id">Bahasa Indonesia</a></li><li><a href="/ar/" hreflang="ar" lang="ar">العربية</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li></ul>
+<p>This is a personal site, not an official Binance website. Crypto prices are volatile and trading carries risk. Make sure Binance is legally available where you live.</p>
+</div></footer>
+<div class="bar"><div class="wrap">
+<span class="label">Referral code: <b>QPC49TSL</b></span>
+<button class="copy" type="button" data-copy="QPC49TSL" data-done="Copied">Copy</button>
+<a class="cta" href="https://www.binance.com/en/join?ref=QPC49TSL" rel="sponsored noopener" target="_blank">Sign up</a>
+</div></div>
+<script>document.querySelectorAll('button.copy').forEach(function(b){b.addEventListener('click',function(){var t=b.getAttribute('data-copy'),o=b.textContent;function done(){b.textContent=b.getAttribute('data-done');setTimeout(function(){b.textContent=o},1500)}if(navigator.clipboard){navigator.clipboard.writeText(t).then(done,fallback)}else{fallback()}function fallback(){var i=document.createElement('textarea');i.value=t;document.body.appendChild(i);i.select();try{document.execCommand('copy')}catch(e){}i.remove();done()}})});</script>
+</body>
+</html>
