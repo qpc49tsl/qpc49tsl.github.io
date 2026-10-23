@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Comisiones de Binance: cómo se calculan en Spot y Futuros y 3 formas de pagar menos | Código QPC49TSL</title>
+<meta name="description" content="Un usuario normal de Binance paga 0,1% en Spot y 0,02% maker / 0,05% taker en futuros USDⓈ-M. Cómo se calculan las comisiones, cuánto cuesta de verdad una ida y vuelta en futuros, y cuánto puedes bajar con BNB y un código de referido.">
+<link rel="canonical" href="https://qpc49tsl.github.io/es/trading-fee-calculation.html">
+<link rel="alternate" hreflang="zh-CN" href="https://qpc49tsl.github.io/zh-cn/trading-fee-calculation.html">
+<link rel="alternate" hreflang="zh-TW" href="https://qpc49tsl.github.io/zh-tw/trading-fee-calculation.html">
+<link rel="alternate" hreflang="en" href="https://qpc49tsl.github.io/en/trading-fee-calculation.html">
+<link rel="alternate" hreflang="es" href="https://qpc49tsl.github.io/es/trading-fee-calculation.html">
+<link rel="alternate" hreflang="pt-BR" href="https://qpc49tsl.github.io/pt-br/trading-fee-calculation.html">
+<link rel="alternate" hreflang="ru" href="https://qpc49tsl.github.io/ru/trading-fee-calculation.html">
+<link rel="alternate" hreflang="vi" href="https://qpc49tsl.github.io/vi/trading-fee-calculation.html">
+<link rel="alternate" hreflang="id" href="https://qpc49tsl.github.io/id/trading-fee-calculation.html">
+<link rel="alternate" hreflang="ar" href="https://qpc49tsl.github.io/ar/trading-fee-calculation.html">
+<link rel="alternate" hreflang="fr" href="https://qpc49tsl.github.io/fr/trading-fee-calculation.html">
+<link rel="alternate" hreflang="x-default" href="https://qpc49tsl.github.io/en/trading-fee-calculation.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Comisiones de Binance: cómo se calculan en Spot y Futuros y 3 formas de pagar menos | Código QPC49TSL">
+<meta property="og:description" content="Un usuario normal de Binance paga 0,1% en Spot y 0,02% maker / 0,05% taker en futuros USDⓈ-M. Cómo se calculan las comisiones, cuánto cuesta de verdad una ida y vuelta en futuros, y cuánto puedes bajar con BNB y un código de referido.">
+<meta property="og:url" content="https://qpc49tsl.github.io/es/trading-fee-calculation.html">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Comisiones de Binance: cómo se calculan en Spot y Futuros y 3 formas de pagar menos | Código QPC49TSL", "description": "Un usuario normal de Binance paga 0,1% en Spot y 0,02% maker / 0,05% taker en futuros USDⓈ-M. Cómo se calculan las comisiones, cuánto cuesta de verdad una ida y vuelta en futuros, y cuánto puedes bajar con BNB y un código de referido.", "inLanguage": "es", "datePublished": "2026-10-23", "dateModified": "2026-10-23", "mainEntityOfPage": "https://qpc49tsl.github.io/es/trading-fee-calculation.html"}</script>
+<style>
+:root{--bg:#fafaf7;--fg:#1d1d1f;--muted:#5f6368;--line:#e4e4de;--card:#fff;--accent:#0b7a5c;--accent-fg:#fff;--code-bg:#eef4f0}
+@media (prefers-color-scheme:dark){:root{--bg:#121413;--fg:#ececea;--muted:#a3a7a5;--line:#2a2e2c;--card:#1a1d1c;--accent:#3fbf94;--accent-fg:#06110d;--code-bg:#202624}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.75 system-ui,-apple-system,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans",sans-serif;padding-bottom:76px}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:52px;font-size:.95rem}
+header a{color:var(--fg);text-decoration:none;font-weight:600}
+a{color:var(--accent);overflow-wrap:anywhere}
+h1{font-size:1.6rem;line-height:1.35;margin:28px 0 6px}
+.meta{color:var(--muted);font-size:.85rem;margin:0 0 8px}
+h2{font-size:1.25rem;line-height:1.4;margin:36px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;line-height:1.5;margin:26px 0 6px}
+p,ul,ol{margin:0 0 14px}
+li{margin:4px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:20px 0 8px}
+.card-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;font-size:.9rem;color:var(--muted)}
+.card-top .rebate{color:var(--accent);font-weight:600}
+.code-row{display:flex;gap:10px;align-items:stretch;margin:10px 0 0}
+.code{flex:1;font:700 1.9rem/1 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.06em;background:var(--code-bg);padding:14px;border-radius:10px;text-align:center;user-select:all}
+button.copy{font:inherit;font-size:.95rem;font-weight:600;border:1px solid var(--accent);color:var(--accent);background:transparent;border-radius:10px;padding:0 16px;cursor:pointer;white-space:nowrap}
+.cta{display:block;text-align:center;background:var(--accent);color:var(--accent-fg);text-decoration:none;font-weight:700;padding:13px 16px;border-radius:10px;margin-top:12px}
+.disclosure{font-size:.82rem;color:var(--muted);margin:10px 0 0;line-height:1.55}
+.next{display:block;margin:32px 0 0;padding:14px 16px;border:1px solid var(--line);border-radius:10px;text-decoration:none;font-weight:600}
+.bar{position:fixed;inset-inline:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:10px 16px}
+.bar .wrap{display:flex;gap:8px;align-items:center;padding:0}
+.bar .label{flex:1;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar b{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.04em}
+.bar button.copy{padding:8px 12px}
+.bar .cta{margin:0;padding:8px 14px;white-space:nowrap}
+footer{color:var(--muted);font-size:.88rem;border-top:1px solid var(--line);margin-top:44px;padding:20px 0}
+.langs{display:flex;flex-wrap:wrap;gap:6px 16px;list-style:none;padding:0;margin:8px 0 16px}
+.hub{list-style:none;padding:0}
+.hub li{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0;background:var(--card)}
+.hub .lang{font-weight:700;display:block}
+.related ul{padding-inline-start:20px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="/es/">QPC49TSL</a><a href="/" aria-label="Languages">🌐 Español</a></div></header>
+<main class="wrap">
+<article>
+<h1>Comisiones de Binance: cómo se calculan en Spot y Futuros y 3 formas de pagar menos | Código QPC49TSL</h1>
+<p class="meta">Actualizado 2026-10-23</p>
+<section class="card" aria-label="Código de referido">
+<div class="card-top"><span>Código de referido</span><span class="rebate">20% de reembolso en comisiones de Spot y Futuros</span></div>
+<div class="code-row"><code class="code">QPC49TSL</code><button class="copy" type="button" data-copy="QPC49TSL" data-done="¡Copiado!">Copiar</button></div>
+<a class="cta" href="https://www.binance.com/es-LA/join?ref=QPC49TSL" rel="sponsored noopener" target="_blank">Regístrate en Binance con este código</a>
+<p class="disclosure">Es mi propio código de referido. Si te registras con él, Binance me paga una comisión. No reduce tu reembolso.</p>
+</section>
+<p>Las comisiones son ese costo que nadie mira pero todos pagan. Primero veamos cómo se calculan y después cómo bajarlas.</p>
+<p>Las tarifas de abajo son las estándar para usuarios normales según la página de comisiones de Binance. Revisa siempre la página oficial para ver los números actuales.</p>
+<h3>Comisiones en Spot</h3>
+<p>Usuario normal: 0,1% maker, 0,1% taker.<br>Pagando con BNB tienes 25% de descuento: 0,075%.</p>
+<p>Fórmula: comisión = monto de la operación × tarifa.</p>
+<p>Ejemplo: compras 1.000 USDT en cripto y pagas 1.000 × 0,1% = 1 USDT. Cuando vendes, pagas otra vez.</p>
+<h3>Comisiones en futuros USDⓈ-M</h3>
+<p>Usuario normal (margen en USDT): 0,02% maker, 0,05% taker.<br>Pagando con BNB tienes 10% de descuento: 0,018% maker, 0,045% taker.</p>
+<p>Dos cosas importantes en futuros:</p>
+<ul><li>La comisión se calcula sobre el tamaño de la posición, no sobre el margen. 1.000 USDT a 20x es una posición de 20.000 USDT.</li><li>Pagas al abrir y otra vez al cerrar.</li></ul>
+<p>Ejemplo: 1.000 USDT, 20x, orden de mercado para abrir y para cerrar:<br>Abrir: 20.000 × 0,05% = 10 USDT<br>Cerrar: 20.000 × 0,05% = 10 USDT<br>Son 20 USDT por cada ida y vuelta, el 2% de tu margen. Para quien opera futuros seguido, las comisiones son el gasto más grande.</p>
+<h3>Maker y taker</h3>
+<p>Maker: pones una orden a un precio y esperas que alguien la llene, como una orden límite que no se ejecuta al instante.<br>Taker: ejecutas al instante a precio de mercado, como una orden de mercado.</p>
+<p>La comisión maker es más baja, así que no persigas el precio con órdenes de mercado si no hace falta.</p>
+<h3>3 formas de pagar menos</h3>
+<ol><li>Usa un código de referido. 20% de cada comisión de vuelta, en Spot y Futuros. Se hace una sola vez al registrarte.</li><li>Paga las comisiones con BNB. 25% menos en Spot, 10% menos en futuros. Actívalo en la configuración de tu cuenta y deja un poco de BNB.</li><li>Más maker, menos taker. En futuros, la comisión maker es dos quintos de la taker.</li></ol>
+<p>Juntando todo en Spot: 0,1% × 0,75 (BNB) = 0,075%, y con el 20% de vuelta te queda en 0,06%.</p>
+<p>Fíjate también en las promociones, como 0 comisión maker en algunos pares de futuros. Eso sí: las operaciones sin comisión no generan reembolso ni cuentan para el volumen de revinculación.</p>
+<h3>Niveles VIP</h3>
+<p>Con suficiente volumen de 30 días y BNB en la cuenta subes a VIP y pagas menos. Por ejemplo, VIP 1 en Spot pide más de 1 millón de dólares de volumen en 30 días y 5 BNB. Para la mayoría, los tres consejos de arriba pesan más.</p>
+<p>Enlace de registro (con el código de referido puesto):<br><a href="https://www.binance.com/es-LA/join?ref=QPC49TSL" rel="sponsored noopener" target="_blank">https://www.binance.com/es-LA/join?ref=QPC49TSL</a></p>
+<p>Código de referido: QPC49TSL</p>
+</article>
+<a class="next" href="/es/guide.html">¿Quieres todas las reglas? Lee la guía completa →</a><section class="related"><h2>También te puede interesar</h2><ul><li><a href="/es/forgot-referral-code.html">¿Olvidaste poner el código de referido en Binance? Cómo vincularlo después del registro | Código QPC49TSL</a></li><li><a href="/es/is-rebate-permanent.html">¿El reembolso de referido de Binance es de por vida? Cuánto dura en Spot y Futuros | Código QPC49TSL</a></li><li><a href="/es/rebate-percentage.html">¿Qué porcentaje devuelve un código de referido de Binance? El 40% y el 50% explicados | Código QPC49TSL</a></li><li><a href="/es/what-is-referral-code-for.html">¿Para qué sirve el código de referido de Binance? Cuánto ahorras en un año | Código QPC49TSL</a></li><li><a href="/es/where-to-check-rebate.html">¿Dónde ver el reembolso de referido en Binance? Historial de cashback | Código QPC49TSL</a></li></ul></section>
+</main>
+<footer><div class="wrap">
+<div>Otros idiomas</div>
+<ul class="langs"><li><a href="/zh-cn/" hreflang="zh-CN" lang="zh-CN">简体中文</a></li><li><a href="/zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a></li><li><a href="/en/" hreflang="en" lang="en">English</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/vi/" hreflang="vi" lang="vi">Tiếng Việt</a></li><li><a href="/id/" hreflang="id" lang="id">Bahasa Indonesia</a></li><li><a href="/ar/" hreflang="ar" lang="ar">العربية</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li></ul>
+<p>Este es un sitio personal, no un sitio oficial de Binance. Las criptomonedas son volátiles y operar implica riesgos. Verifica que Binance esté disponible legalmente en tu país.</p>
+</div></footer>
+<div class="bar"><div class="wrap">
+<span class="label">Código de referido: <b>QPC49TSL</b></span>
+<button class="copy" type="button" data-copy="QPC49TSL" data-done="¡Copiado!">Copiar</button>
+<a class="cta" href="https://www.binance.com/es-LA/join?ref=QPC49TSL" rel="sponsored noopener" target="_blank">Registrarse</a>
+</div></div>
+<script>document.querySelectorAll('button.copy').forEach(function(b){b.addEventListener('click',function(){var t=b.getAttribute('data-copy'),o=b.textContent;function done(){b.textContent=b.getAttribute('data-done');setTimeout(function(){b.textContent=o},1500)}if(navigator.clipboard){navigator.clipboard.writeText(t).then(done,fallback)}else{fallback()}function fallback(){var i=document.createElement('textarea');i.value=t;document.body.appendChild(i);i.select();try{document.execCommand('copy')}catch(e){}i.remove();done()}})});</script>
+</body>
+</html>
